@@ -3,12 +3,13 @@ public class Book {
     private int year;
     private Author author;
 
-    public Book (String title, int year){
+    public Book (Author author, String title, int year){
+        this.author = author;
         this.title = title;
         this.year = year;
     }
 
-    public Author author() {
+    public Author getAuthor() {
         return author;
     }
 
